@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id=app>
     <div class="todoapp">
       <header class="header">
         <h1>todos</h1>
@@ -197,15 +197,14 @@ export default {
 
 // handle routing
 // function onHashChange () {
-//   var visibility = window.location.hash.replace(/#\/?/, '')
-//   if (filters[visibility]) {
-//     window.Vue.visibility = visibility
-//   } else {
-//     window.location.hash = ''
-//     window.Vue.visibility = 'all'
-//   }
+//     var visibility = window.location.hash.replace(/#\/?/, '')
+//     if (filters[visibility]) {
+//       this.visibility = visibility
+//     } else {
+//       window.location.hash = ''
+//       this.visibility = 'all'
+//     }
 // }
-//
 // window.addEventListener('hashchange', onHashChange)
 // onHashChange()
 </script>

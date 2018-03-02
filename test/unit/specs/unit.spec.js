@@ -3,6 +3,11 @@ import app from '@/App';
 
 describe('app.vue', () => {
 
+  // beforeEach( () => {
+  //   const Constructor = Vue.extend(app)
+  //   const subject = new Constructor().$mount()
+  // });
+
   it("adds todo's to list", () => {
     const Constructor = Vue.extend(app)
     const subject = new Constructor().$mount()
@@ -12,7 +17,7 @@ describe('app.vue', () => {
     expect(subject.todos[0].title).to.equal('test')
   });
 
-  it("removes todo's from list", function() {
+  it("removes todo's from list", () => {
     const Constructor = Vue.extend(app)
     const subject = new Constructor().$mount()
     subject.newTodo = 'test'
@@ -23,7 +28,7 @@ describe('app.vue', () => {
     expect(subject.todos).to.be.empty
   });
 
-  it("edits todo's in list", function() {
+  it("edits todo's in list", () => {
     const Constructor = Vue.extend(app)
     const subject = new Constructor().$mount()
     subject.newTodo = 'test'
@@ -37,7 +42,7 @@ describe('app.vue', () => {
     expect(subject.todos[0].title).to.equal('edit')
   });
 
-  it("can cancel edit if needed", function() {
+  it("can cancel edit if needed", () => {
     const Constructor = Vue.extend(app)
     const subject = new Constructor().$mount()
     subject.newTodo = 'test'
@@ -51,11 +56,11 @@ describe('app.vue', () => {
     expect(subject.editedTodo).to.equal(null)
   });
 
-  it("updates storage whenever changes are made to todo's", function() {
-    const Constructor = Vue.extend(app)
-    const subject = new Constructor().$mount()
-    console.log(app)
-    //sinon.spy(todoStorage)
-  })
+  // it("updates storage whenever changes are made to todo's", function() {
+  //   const Constructor = Vue.extend(app)
+  //   const subject = new Constructor().$mount()
+  //   console.log(window.todoStorage)
+  //   //sinon.spy(todoStorage)
+  // })
 
 });
