@@ -27,17 +27,17 @@ $ npm install
 
 All tests:
 ```
-npm run test
+$ npm run test
 ```
 
 Unit Tests:
 ```
-npm run unit
+$ npm run unit
 ```
 
 UI Tests:
 ```
-npm run e2e
+$ npm run e2e
 ```
 
 ### Challenges
