@@ -12,6 +12,7 @@ with all UI tests run using nightwatch.
 #### Prerequisites
 
 Node - v8.9.4
+
 Npm - v5.6.0
 
 #### Getting the Repo
